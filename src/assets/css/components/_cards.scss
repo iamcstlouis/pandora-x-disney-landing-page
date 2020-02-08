@@ -4,6 +4,33 @@
 
     .featured-card {
         // width: 80%;
-        margin: 0 auto;
+        margin: 0 auto 8rem auto;
+    }
+
+    .card-info {
+        margin-top: 7rem;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: .1rem;
+            width: 60%;
+            left: 50%;
+            top: -3rem;
+            transform: translateX(-50%);
+            background-color: #F40D0D;
+        }
+
+        .pandora-disney-logo {
+            width: 65%;
+            margin: 0 auto;
+        }
+
+        .product-desc,
+        .price {
+            font-size: 12px;
+            padding: 1rem 0;
+        }
     }
 }
