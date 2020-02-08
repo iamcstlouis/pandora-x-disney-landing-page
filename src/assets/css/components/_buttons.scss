@@ -1,6 +1,11 @@
 a {
     color: #27251F;
     display: inline-block;
+
+    &:hover {
+        color: #27251F;
+        text-decoration: none;
+    }
 }
 
 // ----------------------------------------------------------------

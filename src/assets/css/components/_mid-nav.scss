@@ -1,6 +1,15 @@
 .mid-nav {
     padding: 2rem 0;
 
+    @include media-breakpoint-up(sm) {
+        padding: 2rem 1rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        width: 80%;
+        margin: 0 auto;
+    }
+
     .nav-link {
         font-size: 14px;
     }

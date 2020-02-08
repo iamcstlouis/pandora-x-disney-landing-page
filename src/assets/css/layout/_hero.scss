@@ -1,30 +1,83 @@
 .hero {
-    .hero-bg-img {
-        background-image: url(/src/assets/images/hero-bg.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 65rem;
-        width: 100%;
-        padding: 6rem 0;
 
-        .hero-featured-img-block {
-            width: 80%;
-            margin: 0 auto;
-            // padding-top: 4rem;
-        }
+    .content-wrapper {
 
-        .hero-txt-block {
-            padding: 2rem 1rem 0 1rem;
+        .hero-bg-img {
+            background-image: url(/src/assets/images/hero-bg.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 65rem;
+            width: 100%;
+            padding: 6rem 0;
+            position: relative;
 
-            .pandora-disney-logo {
-                width: 70%;
-            }
+            >div {
+                @include media-breakpoint-up(lg) {
+                    position: absolute;
+                    width: 80%;
+                    left: 50%;
+                    bottom: 4rem;
+                    transform: translateX(-50%);
+                }
 
-            .hero-txt {
-                padding-top: 1rem;
+                .hero-featured-img-block {
+                    padding: 0 1rem;
+                    width: 60%;
 
-                .text-block-desc {
-                    padding-top: .5rem;
+                    @include media-breakpoint-up(sm) {
+                        width: 50%;
+                        padding: 0 2rem;
+                        margin-left: 0;
+                        margin-right: auto
+                    }
+
+                    @include media-breakpoint-up(md) {
+                        width: 40%;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        width: 50%;
+                    }
+                }
+
+                .hero-txt-block {
+                    width: 80%;
+                    padding: 2rem 1rem 0 1rem;
+
+                    @include media-breakpoint-up(sm) {
+                        padding: 2rem;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        padding-bottom: 1rem;
+                        margin-top: auto;
+                    }
+
+                    .text-block-desc {
+                        width: 100%;
+
+
+                        @include media-breakpoint-up(lg) {
+                            width: 90%;
+                        }
+                    }
+
+                    .pandora-disney-logo {
+                        max-width: 15rem;
+
+                        @include media-breakpoint-up(md) {
+                            max-width: 20.5rem;
+                        }
+                    }
+
+                    .hero-txt {
+                        padding-top: 1rem;
+
+                        .text-block-desc {
+                            padding-top: .5rem;
+                        }
+                    }
                 }
             }
         }

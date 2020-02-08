@@ -1,45 +1,53 @@
 .cards {
-    // padding: 10rem 0;
     margin-top: 10rem;
 
-    .featured-card {
-        // width: 80%;
-        margin: 0 auto 8rem auto;
-
-        &:nth-child(3) {
-            margin-bottom: 0 !important;
-        }
-    }
-
-    .card-info {
-        margin-top: 7rem;
-        position: relative;
-
-        &::before {
-            content: "";
-            position: absolute;
-            height: .1rem;
-            width: 60%;
-            left: 50%;
-            top: -3rem;
-            transform: translateX(-50%);
-            background-color: #F40D0D;
+    .cards-wrapper {
+        @include media-breakpoint-up(lg) {
+            margin-top: 20rem;
         }
 
-        .pandora-disney-logo {
-            width: 65%;
-            margin: 0 auto;
+        .featured-card {
+            // width: 80%;
+            margin: 0 auto 8rem auto;
+
+            &:nth-child(3) {
+                margin-bottom: 0 !important;
+            }
         }
 
-        .product-desc,
-        .price {
-            font-size: 12px;
-            padding: 1rem 0;
+        .card-info {
+            margin-top: 7rem;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: .1rem;
+                width: 60%;
+                left: 50%;
+                top: -3rem;
+                transform: translateX(-50%);
+                background-color: #F40D0D;
+            }
+
+            .pandora-disney-logo {
+                width: 65%;
+                margin: 0 auto;
+            }
+
+            .product-desc,
+            .price {
+                font-size: 12px;
+                padding: 1rem 0;
+            }
         }
     }
 
     .featured-link-wrapper {
         margin-top: 5rem;
-        text-align: center;
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 0;
+        }
     }
 }

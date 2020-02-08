@@ -10,7 +10,7 @@ h1 {
     font-weight: 600;
 
     @include media-breakpoint-up(md) {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 }
 
@@ -18,8 +18,4 @@ p {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.7;
-
-    @include media-breakpoint-up(md) {
-        font-size: 20px;
-    }
 }
