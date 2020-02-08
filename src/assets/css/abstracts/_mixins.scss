@@ -2,6 +2,10 @@
     transition: width .4s;
 }
 
+@mixin link-hover {
+    transition: all .4s ease-in-out;
+}
+
 
 // Small devices (landscape phones, 576px and up)
 // @include media-breakpoint-up(sm) {

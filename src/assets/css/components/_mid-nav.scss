@@ -10,7 +10,20 @@
         margin: 0 auto;
     }
 
-    .nav-link {
-        font-size: 14px;
+    .nav-item {
+
+        .nav-link {
+            font-size: 14px;
+            opacity: .5;
+            @include link-hover;
+
+            &.active {
+                opacity: 1;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
     }
 }
