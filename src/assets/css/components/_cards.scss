@@ -5,6 +5,10 @@
     .featured-card {
         // width: 80%;
         margin: 0 auto 8rem auto;
+
+        &:nth-child(3) {
+            margin-bottom: 0 !important;
+        }
     }
 
     .card-info {
@@ -32,5 +36,10 @@
             font-size: 12px;
             padding: 1rem 0;
         }
+    }
+
+    .featured-link-wrapper {
+        margin-top: 5rem;
+        text-align: center;
     }
 }

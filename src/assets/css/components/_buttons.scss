@@ -4,21 +4,39 @@ a {
 }
 
 // ----------------------------------------------------------------
-//                          Box Link
+//                          Box Links
 // ----------------------------------------------------------------
 .box-link {
     font-size: 1.2rem;
     text-transform: uppercase;
-    border: solid #27251F 1px;
     margin-top: 3rem;
     padding: 1.3rem 7.4rem;
 
+    &--black {
+        border: solid #27251F 1px;
+    }
+
+    &--red {
+        border: solid red 1px;
+    }
 }
 
 // ----------------------------------------------------------------
-//                         Shop Now Link
+//                         Shop Now Links
 // ----------------------------------------------------------------
 .shop-now-link {
     font-size: 1.2rem;
     text-transform: uppercase;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: .1rem;
+        width: 100%;
+        left: 50%;
+        bottom: -.5rem;
+        transform: translateX(-50%);
+        background-color: #F40D0D;
+    }
 }
