@@ -1,2 +1,9 @@
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
-@import 'components/program.scss';
+
+@import 'abstracts/mixins', 'abstracts/variables';
+
+@import 'base/reset', 'base/base', 'base/typography';
+
+@import 'layout/footer', 'layout/hero', 'layout/main', 'layout/mid-nav', 'layout/top-nav';
+
+@import 'components/buttons', 'components/cards';
