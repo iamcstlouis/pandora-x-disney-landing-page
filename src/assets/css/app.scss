@@ -4,6 +4,6 @@
 
 @import 'base/reset', 'base/base', 'base/typography';
 
-@import 'layout/footer', 'layout/hero', 'layout/main', 'layout/mid-nav', 'layout/top-nav';
+@import 'layout/footer', 'layout/hero', 'layout/main-content', 'layout/mid-nav', 'layout/top-nav';
 
-@import 'components/buttons', 'components/cards';
+@import 'components/buttons', 'components/cards', 'components/mid-nav';

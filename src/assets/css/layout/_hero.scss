@@ -3,13 +3,14 @@
         background-image: url(/src/assets/images/hero-bg.jpg);
         background-position: center;
         background-repeat: no-repeat;
-        height: 60rem;
+        height: 65rem;
         width: 100%;
+        padding: 6rem 0;
 
         .hero-featured-img-block {
             width: 80%;
             margin: 0 auto;
-            padding-top: 4rem;
+            // padding-top: 4rem;
         }
 
         .hero-txt-block {
