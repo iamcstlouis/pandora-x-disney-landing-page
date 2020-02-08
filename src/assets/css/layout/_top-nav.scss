@@ -14,5 +14,44 @@ header {
 
     .top-nav {
         padding: 0 0 2rem 0;
+
+        .nav-item {
+
+            @include media-breakpoint-up(lg) {
+                a {
+                    color: #27251F !important;
+
+                    &:after {
+                        content: "";
+                        height: .2rem;
+                        width: 0;
+                        background: #FFB1DE;
+                        display: block;
+                        margin-top: .5rem;
+                    }
+
+                    &:hover:after {
+                        width: 100%;
+                        @include top-nav-hover;
+                    }
+                }
+
+                &.active {
+                    a {
+                        color: #FFB1DE;
+                        position: relative;
+
+                        &:after {
+                            content: "";
+                            height: .2rem;
+                            width: 100%;
+                            background: #FFB1DE;
+                            display: block;
+                            margin-top: .5rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
