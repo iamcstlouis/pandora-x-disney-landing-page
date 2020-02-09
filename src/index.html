@@ -8,6 +8,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <link rel="shortcut icon" href="./favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Pandora x Disney Landing Page</title>
 
     <noscript>
@@ -82,12 +83,14 @@
                 <div class="content-wrapper">
                     <div class="hero-bg-img">
                         <div class="d-lg-flex justify-content-lg-between flex-lg-row-reverse">
-                            <div class="hero-featured-img-block">
+                            <div class="hero-featured-img-block" data-aos="fade-left" data-aos-delay="1000"
+                                data-aos-duration="1500">
                                 <img src="/src/assets/images/hero-featured-img.png"
                                     alt="Pandora x Disney featured image" class="hero-featured-img img-fluid">
                             </div>
 
-                            <div class="hero-txt-block">
+                            <div class="hero-txt-block" data-aos="fade-up" data-aos-delay="500"
+                                data-aos-duration="1000">
                                 <div class="pandora-disney-logo">
                                     <img src="/src/assets/images/hero-logo.png" alt="Pandora Disney Collaboration"
                                         class="pandora-disney-logo img-fluid">
@@ -132,11 +135,12 @@
             <section class="main-content">
                 <div class="content-wrapper">
                     <div class="d-lg-flex">
-                        <div class="main-featured-img-wrapper fast-reveal">
+                        <div class="main-featured-img-wrapper" data-aos="fade-up" data-aos-delay="500"
+                            data-aos-duration="1000">
                             <img src="/src/assets/images/main-featured-img.png"
                                 alt="Pandora x Disney main featured image" class="main-featured-img img-fluid">
                         </div>
-                        <div class="main-txt-block mid-reveal">
+                        <div class="main-txt-block" data-aos="fade-left" data-aos-delay="800" data-aos-duration="1500">
                             <div class="pandora-disney-logo">
                                 <img src="/src/assets/images/hero-logo.png" alt="Pandora Disney Collaboration"
                                     class="pandora-disney-logo">
@@ -161,7 +165,8 @@
                         <div class="cards-wrapper d-lg-flex">
 
                             <!-- Featured Cards -->
-                            <div class="featured-card text-center fast-reveal">
+                            <div class="featured-card text-center" data-aos="fade-up" data-aos-delay="600"
+                                data-aos-duration="1500">
                                 <a href="#">
                                     <div class="card-img">
                                         <img src="/src/assets/images/card-1.png" alt="Pandora x Disney featured product"
@@ -178,7 +183,8 @@
                                 </a>
                             </div>
 
-                            <div class="featured-card text-center mid-reveal">
+                            <div class="featured-card text-center" data-aos="fade-up" data-aos-delay="900"
+                                data-aos-duration="1500">
                                 <a href="#">
                                     <div class="card-img">
                                         <img src="/src/assets/images/card-2.png" alt="Pandora x Disney featured product"
@@ -195,7 +201,8 @@
                                 </a>
                             </div>
 
-                            <div class="featured-card text-center slow-reveal">
+                            <div class="featured-card text-center" data-aos="fade-up" data-aos-delay="1200"
+                                data-aos-duration="1500">
                                 <a href="#">
                                     <div class="card-img">
                                         <img src="/src/assets/images/card-3.png" alt="Pandora x Disney featured product"
@@ -214,7 +221,8 @@
                         </div>
 
                         <!-- Shop Now Link -->
-                        <div class="featured-link-wrapper text-center">
+                        <div class="featured-link-wrapper text-center" data-aos="fade-up" data-aos-delay="600"
+                            data-aos-duration="1500">
                             <a href="https://uk.pandora.net/en/jewellery/disney/?ps_kw=pandora%20disney&cid=sem:branded:e:en_gb::adwords:XDECISION_UK_EN_Search_Brand_AllCategories_Women_2018_:spri19:te:::epiphany&gclid=Cj0KCQiAsvTxBRDkARIsAH4W_j9JJEKw11fXccPTzsB9Fu6ipYHl7SlHN8E3CmKhEz0k5oNylBMINgcaAm5fEALw_wcB&gclsrc=aw.ds"
                                 target="_blank" class="shop-now-link">
                                 Shop now
@@ -227,21 +235,26 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
+        <div class="container" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1500">
             <div class="content-wrapper">
-                <div class="footer-logo text-center">
-                    <img src="/src/assets/images/hero-logo.png" alt="Pandora Disney Collaboration"
-                        class="pandora-disney-logo">
+                <div>
+                    <div class="footer-logo text-center">
+                        <img src="/src/assets/images/hero-logo.png" alt="Pandora Disney Collaboration"
+                            class="pandora-disney-logo">
+                    </div>
+                    <p class="copyright text-center">
+                        Landing page. &copy;2020 Copyright. Designed & Developed by Chantal St Louis
+                        with love
+                    </p>
                 </div>
-                <p class="copyright text-center">
-                    Landing page. &copy;2020 Copyright. Designed & Developed by Chantal St Louis
-                    with love
-                </p>
-
             </div>
         </div>
     </footer>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+    </script>
 </body>
 
 </html>

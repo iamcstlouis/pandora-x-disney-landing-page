@@ -16,6 +16,15 @@ header {
         padding: 0 0 2rem 0;
 
         .nav-item {
+            padding: 1rem 0;
+
+            &:first-child {
+                margin-top: 3rem;
+
+                @include media-breakpoint-up(lg) {
+                    margin-top: 0;
+                }
+            }
 
             @include media-breakpoint-up(lg) {
                 a {
