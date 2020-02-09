@@ -21,7 +21,7 @@
         .copyright {
             font-size: 10px;
             margin: 1rem auto 0 auto;
-            opacity: .5;
+            color: rgb(165, 164, 164);
             width: 80%;
 
             @include media-breakpoint-up(sm) {
@@ -30,6 +30,16 @@
 
             @include media-breakpoint-up(md) {
                 width: 40%;
+            }
+
+            a {
+                color: rgb(165, 164, 164);
+                @include link-hover;
+
+                &:hover {
+                    opacity: 1;
+                    color: #000;
+                }
             }
         }
     }

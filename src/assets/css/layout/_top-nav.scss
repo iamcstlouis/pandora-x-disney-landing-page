@@ -34,7 +34,7 @@ header {
                         content: "";
                         height: .2rem;
                         width: 0;
-                        background: #f6b3bf;
+                        background: $clr-brand-pink;
                         display: block;
                         margin-top: .5rem;
                     }
@@ -47,14 +47,14 @@ header {
 
                 &.active {
                     a {
-                        color: #f6b3bf;
+                        color: $clr-brand-pink;
                         position: relative;
 
                         &:after {
                             content: "";
                             height: .2rem;
                             width: 100%;
-                            background: #f6b3bf;
+                            background: $clr-brand-pink;
                             display: block;
                             margin-top: .5rem;
                         }
