@@ -87,10 +87,19 @@ const config = {
             filename: (env === 'development') ? '[name].css' : '[name].[hash].css',
             chunkFilename: (env === 'development') ? '[id].css' : '[id].[hash].css',
         }),
+        // new CopyWebpackPlugin([{
+        //     from: path.resolve(__dirname, 'src', 'assets', 'images', 'favicon.png'),
+        //     to: './favicon.png'
+        // }])
         new CopyWebpackPlugin([{
-            from: path.resolve(__dirname, 'src', 'assets', 'images', 'favicon.png'),
-            to: './favicon.png'
-        }])
+                from: path.resolve(__dirname, 'src', 'assets', 'images', 'favicon.png'),
+                to: './favicon.png'
+            },
+            {
+                from: path.resolve(__dirname, 'src', 'assets', 'images'),
+                to: './images'
+            },
+        ]),
     ],
     resolve: {
         extensions: ['.js', '.json'],
