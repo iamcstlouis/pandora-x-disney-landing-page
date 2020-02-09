@@ -34,7 +34,7 @@ header {
                         content: "";
                         height: .2rem;
                         width: 0;
-                        background: #FFB1DE;
+                        background: #f6b3bf;
                         display: block;
                         margin-top: .5rem;
                     }
@@ -47,14 +47,14 @@ header {
 
                 &.active {
                     a {
-                        color: #FFB1DE;
+                        color: #f6b3bf;
                         position: relative;
 
                         &:after {
                             content: "";
                             height: .2rem;
                             width: 100%;
-                            background: #FFB1DE;
+                            background: #f6b3bf;
                             display: block;
                             margin-top: .5rem;
                         }

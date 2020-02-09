@@ -18,14 +18,14 @@ const config = {
     },
     optimization: {
         splitChunks: {
-          cacheGroups: {
-            shared: {
-                test: /[\\/]node_modules[\\/]/,
-                name: "vendor",
-                enforce: true,
-                chunks: "all"
+            cacheGroups: {
+                shared: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: "vendor",
+                    enforce: true,
+                    chunks: "all"
+                }
             }
-          }
         },
         minimizer: (env === 'development') ? [
             new OptimizeCSSAssetsPlugin(),
@@ -38,8 +38,7 @@ const config = {
         historyApiFallback: true
     },
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.m?js$/,
                 exclude: /(node_modules)/,
                 use: {
@@ -88,9 +87,10 @@ const config = {
             filename: (env === 'development') ? '[name].css' : '[name].[hash].css',
             chunkFilename: (env === 'development') ? '[id].css' : '[id].[hash].css',
         }),
-        new CopyWebpackPlugin([
-            { from: path.resolve(__dirname, 'src', 'assets', 'images', 'favicon.png'), to: './favicon.png' }
-        ])
+        new CopyWebpackPlugin([{
+            from: path.resolve(__dirname, 'src', 'assets', 'images', 'favicon.png'),
+            to: './favicon.png'
+        }])
     ],
     resolve: {
         extensions: ['.js', '.json'],
