@@ -15,3 +15,14 @@ import 'bootstrap/dist/js/bootstrap.bundle.min'
 // import '@/assets/images/main-featured-img.png'
 // import '@/assets/images/mws-profile.png'
 // import '@/assets/images/pandora-logo.png'
+
+const heroHeader = document.querySelector('.hero-hdr')
+
+heroHeader.addEventListener('mouseover', () => {
+    heroHeader.style.color = 'red'
+    heroHeader.style.cursor = 'pointer'
+})
+
+heroHeader.addEventListener('mouseout', () => {
+    heroHeader.style.color = '#27251F'
+})
